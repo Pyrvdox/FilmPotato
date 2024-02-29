@@ -9,5 +9,5 @@ class Movie(models.Model):
     date = models.DateField(default=True)
     image = models.ImageField(upload_to="images/")
     duration = models.IntegerField()
-    rate = models.FloatField()
+    rate = models.FloatField(default=0)
     author = models.CharField(max_length= 64)
